@@ -252,6 +252,60 @@
     align-items: center;
   }
   
+  /* Story Flow Visualization */
+  .story-flow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: #f9f9f9;
+    border-radius: 12px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .flow-step {
+    min-width: 120px;
+    padding: 15px;
+    background: white;
+    border: 1px solid var(--secondary);
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    scroll-snap-align: center;
+  }
+  
+  .flow-step::after {
+    content: "→";
+    position: absolute;
+    right: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--secondary);
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .flow-step:last-child::after {
+    display: none;
+  }
+  
+  /* Expert Tips Section */
+  .expert-tip {
+    background: #fff3cd;
+    border-left: 5px solid #ffc107;
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-radius: 0 8px 8px 0;
+  }
+  
+  .expert-tip h3 {
+    color: #856404;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
   /* Footer */
   footer {
     text-align: center;
@@ -402,43 +456,51 @@
       </div>
     </div>
   </div>
-  <!-- Add this module after the custom formulations section, before the footer -->
-<div class="module">
-  <div class="module-header">
-    <h2 class="module-title">Basic Cream-Making Method</h2>
-  </div>
-  <div class="module-content">
-    <p>While Darren will demonstrate the complete process, here's a quick reference guide for creating your moisturiser:</p>
-    
-    <div class="story-flow">
-      <div class="flow-step">Melt<br><small>Heat shea butter gently</small></div>
-      <div class="flow-step">Mix<br><small>Add moringa oil</small></div>
-      <div class="flow-step">Cool<br><small>Until semi-solid</small></div>
-      <div class="flow-step">Whip<br><small>With hand mixer</small></div>
-      <div class="flow-step">Scent<br><small>Add essential oils</small></div>
+  
+  <!-- MODULE 3: BASIC CREAM-MAKING METHOD -->
+  <div class="module">
+    <div class="module-header">
+      <h2 class="module-title">Basic Cream-Making Method</h2>
     </div>
-    
-    <ol style="margin-top: 20px;">
-      <li><strong>Prepare:</strong> Gather all ingredients and equipment. Make sure everything is clean and dry.</li>
+    <div class="module-content">
+      <p>While Darren will demonstrate the complete process, here's a quick reference guide for creating your moisturiser. Darren has been perfecting this technique for many years, so don't be discouraged if your first attempts aren't perfect!</p>
       
-      <li><strong>Melt:</strong> Cut the shea butter into small chunks and melt gently using a double boiler (a heat-safe bowl over simmering water). Never microwave or overheat as this damages beneficial properties.</li>
+      <div class="expert-tip">
+        <h3>Darren's Experience</h3>
+        <p>Darren has been making moisturisers for many years and has refined his technique through extensive trial and error. The perfect texture can be tricky to achieve, but with practice and patience, you'll get great results. Even Darren had to experiment many times to get it just right!</p>
+      </div>
       
-      <li><strong>Mix:</strong> Once melted, remove from heat and add moringa oil. Stir well to combine.</li>
+      <div class="story-flow">
+        <div class="flow-step">Melt<br><small>Heat shea butter gently</small></div>
+        <div class="flow-step">Mix<br><small>Add moringa oil</small></div>
+        <div class="flow-step">Cool<br><small>Until semi-solid</small></div>
+        <div class="flow-step">Whip<br><small>With hand mixer</small></div>
+        <div class="flow-step">Scent<br><small>Add essential oils</small></div>
+      </div>
       
-      <li><strong>Cool:</strong> Let the mixture cool until it begins to solidify around the edges but remains somewhat soft in the center (about 30-40 minutes at room temperature or 15-20 minutes in refrigerator).</li>
+      <ol style="margin-top: 20px;">
+        <li><strong>Prepare:</strong> Gather all ingredients and equipment. Make sure everything is clean and dry.</li>
+        
+        <li><strong>Melt:</strong> Cut the shea butter into small chunks and melt gently using a double boiler (a heat-safe bowl over simmering water). Never microwave or overheat as this damages beneficial properties.</li>
+        
+        <li><strong>Mix:</strong> Once melted, remove from heat and add moringa oil. Stir well to combine.</li>
+        
+        <li><strong>Cool:</strong> Let the mixture cool until it begins to solidify around the edges but remains somewhat soft in the center (about 30-40 minutes at room temperature or 15-20 minutes in refrigerator).</li>
+        
+        <li><strong>Whip:</strong> Using a hand mixer, whip the mixture until it becomes light, fluffy and approximately doubles in volume (about 5-7 minutes).</li>
+        
+        <li><strong>Scent:</strong> Add essential oils in the final minute of whipping (approximately 10-15 drops per cup of mixture).</li>
+        
+        <li><strong>Package:</strong> Transfer to clean containers (like the reused shea butter tubs) and allow to set completely before securing lids tightly.</li>
+      </ol>
       
-      <li><strong>Whip:</strong> Using a hand mixer, whip the mixture until it becomes light, fluffy and approximately doubles in volume (about 5-7 minutes).</li>
+      <div class="note" style="margin-top: 25px;">
+        <strong>Success Tip:</strong> The perfect consistency for whipping is similar to softened butter - when it's just starting to solidify but still soft enough to easily leave an impression when touched. If it's too liquid, it won't whip properly; if too hard, it will be difficult to work with. This is the trickiest part of the process and may take a few tries to get right.
+      </div>
       
-      <li><strong>Scent:</strong> Add essential oils in the final minute of whipping (approximately 10-15 drops per cup of mixture).</li>
-      
-      <li><strong>Package:</strong> Transfer to clean containers (like the reused shea butter tubs) and allow to set completely before securing lids tightly.</li>
-    </ol>
-    
-    <div class="note">
-      <strong>Success Tip:</strong> The perfect consistency for whipping is similar to softened butter - when it's just starting to solidify but still soft enough to easily leave an impression when touched. If it's too liquid, it won't whip properly; if too hard, it will be difficult to work with.
+      <p style="margin-top: 20px; font-style: italic;">Remember, achieving the perfect texture takes practice. Don't be discouraged if your first batch isn't perfect - each attempt will help you develop a feel for the right timing and consistency.</p>
     </div>
   </div>
-</div>
   
   <footer>© 2025 Darren's Moisturiser Maker's Kit | For personal use and gifts</footer>
 </div>
